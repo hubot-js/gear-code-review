@@ -16,7 +16,8 @@ function reviews(hubot, maxDate) {
 }
 
 function enqueue(hubot, username, reviewKey) {
-  return db.getDb().then(dataBase => dataBase.run('INSERT INTO review_queue(user, type, date) VALUES(?, ?, ?)', [username, reviewKey, currentTime()]));
+  return db.getDb().then(dataBase =>
+    dataBase.run('INSERT INTO review_queue(user, type, date) VALUES(?, ?, ?)', [username, reviewKey, currentTime()]));
 }
 
 function dequeue(hubot, author) {

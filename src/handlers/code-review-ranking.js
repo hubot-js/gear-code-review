@@ -33,8 +33,12 @@ function thanks(hubot, reviewers) {
 }
 
 function map(reviewers) {
-  const map = [];
+  const internalMap = [];
   const group = groupBy(reviewers, 'user');
-  for (const key in group) map.push({ name: key, count: group[key].length });
-  return map;
+
+  group.forEach((key) => {
+    internalMap.push({ name: key, count: group[key].length });
+  });
+
+  return internalMap;
 }
