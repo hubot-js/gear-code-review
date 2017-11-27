@@ -1,0 +1,6 @@
+[
+  {
+     "speak": "Em qual canal devo pedir avisar sobre os pedidos de review?",
+     "handler": "src/configHandler/channel-handler"
+  }
+]

@@ -1,0 +1,36 @@
+{
+  "name": "gear-code-review",
+  "version": "1.0.0",
+  "description": "A Hubot Gear for request code review",
+  "main": "index.js",
+  "scripts": {
+    "test": "istanbul cover --include-all-sources _mocha -- --recursive --reporter spec",
+    "coveralls": "cat ./coverage/lcov.info | coveralls",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hubot-js/gear-jenkins.git"
+  },
+  "keywords": [
+    "hubot-gear",
+    "hubot",
+    "slack",
+    "jenkins"
+  ],
+  "author": "robsonbittencourt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hubot-js/gear-jenkins/issues"
+  },
+  "homepage": "https://github.com/hubot-js/gear-jenkins#readme",
+  "dependencies": {
+    "sqlite": "^2.8.0",
+    "q": "^2.0.3",
+    "group-by": "0.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-hubot-js": "^1.0.4"
+  }
+}

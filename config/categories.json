@@ -1,0 +1,15 @@
+[
+   {
+      "key": "code-review",
+      "name": "Code Review",
+      "description": "Para solicitar um code review, utilize os comandos abaixo: ",
+      "visible": true
+   },
+
+   {
+      "key": "code-review-type",
+      "name": "Tipo Code Review",
+      "description": "Tipos de code reviews suportados.",
+      "visible": false
+   }
+]
