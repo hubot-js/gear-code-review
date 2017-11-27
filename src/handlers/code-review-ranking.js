@@ -38,7 +38,7 @@ function map(reviewers) {
   const internalMap = [];
   const group = groupBy(reviewers, 'user');
 
-  group.forEach((key) => {
+  Object.keys(group).forEach((key) => {
     internalMap.push({ name: key, count: group[key].length });
   });
 
