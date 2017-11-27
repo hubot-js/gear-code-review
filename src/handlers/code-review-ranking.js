@@ -7,7 +7,9 @@ const db = require('../../database/database');
 
 function handle(hubot, message) {
   db.ranking(hubot).then((reviewers) => {
-    hubot.speak(message, getMessage(hubot, reviewers));
+    if (reviewers.length > 0) {
+      hubot.speak(message, getMessage(hubot, reviewers));
+    }
   });
 }
 
