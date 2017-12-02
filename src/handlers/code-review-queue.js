@@ -33,8 +33,7 @@ function getQueueMessage(hubot, user, reviews) {
 function listReviews(hubot, reviews) {
   const speecher = hubot.speech().paragraph();
 
-  reviews.forEach(review => speecher.item().bold(review.user).append(' está esperando por um review de ')
-    .bold(review.type).line());
+  reviews.forEach(review => speecher.item().bold(review.user).append(' está esperando por um review').line());
 
   return speecher.end();
 }

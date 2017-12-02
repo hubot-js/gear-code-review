@@ -1,9 +1,12 @@
 [
    {
-      "handler": "code-review-help",
+      "handler": "code-review",
       "trigger": "code review",
-      "category": "code-review",
-      "description": "Listar opções de code reviews"
+      "category": "code-review-type",
+      "description": "Pedido de code review",
+      "options": {
+        "message": "[[auth]] - Alguém disponível para fazer o review de uma alteração desenvolvida por [[author]]? Para isso responda 'eu faço o review'."
+      }
    },
 
    {
@@ -25,83 +28,6 @@
       "trigger": "ranking review",
       "category": "code-review",
       "description": "Listar os maiores revisores de código da história"
-   },
-
-   {
-      "key": "alteracao-simples",
-      "handler": "code-review",
-      "trigger": "alteracao simples",
-      "category": "code-review-type",
-      "description": "Pedido de code review para alteracão simples",
-      "options": {
-        "message": "[[auth]] - Algum desenvolvedor disponível para fazer o review de uma *alteração simples* desenvolvida por [[author]] ? Para isso responda 'eu faço o review'."
-      }
-   },
-
-   {
-      "key": "bug-simples",
-      "handler": "code-review",
-      "trigger": "bug simples",
-      "category": "code-review-type",
-      "description": "Pedido de code review para um bug simples",
-      "options": {
-        "message": "[[auth]] - Algum desenvolvedor disponível para fazer o review de um *bug simples* resolvido por [[author]] ? Para isso responda 'eu faço o review'."
-      }
-   },
-
-   {
-      "key": "alteracao-front",
-      "handler": "code-review",
-      "trigger": "alteracao de front",
-      "category": "code-review-type",
-      "description": "Pedido de code review para alteracão de front",
-      "options": {
-        "message": "[[auth]] - Você pode realizar o code review de uma *alteração de front* desenvolvida por [[author]] ? Para isso responda 'eu faço o review'."
-      }
-   },
-
-   {
-      "key": "alteracao-negocio",
-      "handler": "code-review",
-      "trigger": "alteracao de negocio",
-      "category": "code-review-type",
-      "description": "Pedido de code review para alteracão de negócio",
-      "options": {
-        "message": "[[auth]] - Você pode realizar o code review de uma *alteração de negócio* desenvolvida por [[author]] ? Para isso responda 'eu faço o review'."
-      }
-   },
-
-   {
-      "key": "bug-complexo",
-      "handler": "code-review",
-      "trigger": "bug complexo",
-      "category": "code-review-type",
-      "description": "Pedido de code review para um bug complexo",
-      "options": {
-        "message": "[[auth]] - Você pode realizar o code review de um *bug complexo* resolvido por [[author]] ? Para isso responda 'eu faço o review'."
-      }
-   },
-
-   {
-      "key": "script-banco",
-      "handler": "code-review",
-      "trigger": "script de banco",
-      "category": "code-review-type",
-      "description": "Pedido de code review para script de banco",
-      "options": {
-        "message": "[[auth]] - Você pode conferir os scripts que o colega [[author]] criou ? Para isso responda 'eu faço o review'."
-      }
-   },
-
-   {
-      "key": "issue-sonar",
-      "handler": "code-review",
-      "trigger": "issue sonar",
-      "category": "code-review-type",
-      "description": "Pedido de code review para resolver uma issue do sonar",
-      "options": {
-        "message": "[[auth]] - Você pode validar a correção da issue do sonar feita por [[author]] ? Para isso responda 'eu faço o review'."
-      }
    }
 ]
 

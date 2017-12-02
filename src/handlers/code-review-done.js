@@ -71,21 +71,11 @@ function getThanksMessage(hubot, reviewer, author) {
 }
 
 function pick(message, hubot, reviews, review, reviewer) {
-  const task = reviews.find(r => r.key === review.type);
-
-  if (task) {
-    return reviewerIsNotTheAuthor(review, reviewer);
-  }
-
-  return taskNotFound();
+  return reviewerIsNotTheAuthor(review, reviewer);
 }
 
 function reviewerIsNotTheAuthor(review, reviewer) {
   return review.user !== reviewer.name;
-}
-
-function taskNotFound() {
-  return false;
 }
 
 function nothingToReview(message, hubot, reviewer) {
