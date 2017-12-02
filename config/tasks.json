@@ -2,8 +2,8 @@
    {
       "handler": "code-review",
       "trigger": "code review",
-      "category": "code-review-type",
-      "description": "Pedido de code review",
+      "category": "code-review",
+      "description": "Pedir um code review",
       "options": {
         "message": "[[auth]] - Alguém disponível para fazer o review de uma alteração desenvolvida por [[author]]? Para isso responda 'eu faço o review'."
       }
