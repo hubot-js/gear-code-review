@@ -29,7 +29,7 @@ function handle(hubot, message) {
 }
 
 function getEmptyMessage(hubot, user) {
-  return hubot.speech().hello(user).append('Fique tranquilo: estamos com todos os reviews em dia.').end();
+  return hubot.speech().hello(user).append('code-review:codeReviewDone.noReviews').end();
 }
 
 function doReview(message, hubot, reviewer, review) {
@@ -61,13 +61,13 @@ function score(hubot, review, reviewer, author, count) {
 }
 
 function getNotifyMessage(hubot, reviewer, author) {
-  return hubot.speech().hello(author).append('Chegou a hora.').user(reviewer)
-    .append('está vindo fazer o seu review.').end();
+  return hubot.speech().hello(author).append('code-review:codeReviewDone.notify.partOne').user(reviewer)
+    .append('code-review:codeReviewDone.notify.partTwo').end();
 }
 
 function getThanksMessage(hubot, reviewer, author) {
-  return hubot.speech().thanks(reviewer).append('Pode pegar o banquinho porque o')
-    .user(author).append('está esperando.').end();
+  return hubot.speech().thanks(reviewer).append('code-review:codeReviewDone.thanks.partOne')
+    .user(author).append('code-review:codeReviewDone.thanks.partTwo').end();
 }
 
 function pick(message, hubot, reviews, review, reviewer) {
@@ -84,5 +84,5 @@ function nothingToReview(message, hubot, reviewer) {
 
 function getNothingToReviewMessage(hubot, reviewer) {
   return hubot.speech().hello(reviewer)
-    .append('Os reviews pendentes têm configurações que impedem que você faça o review.').end();
+    .append('code-review:codeReviewDone.nothingToReview').end();
 }

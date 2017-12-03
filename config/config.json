@@ -1,6 +1,6 @@
 [
   {
-     "speak": "Em qual canal devo pedir avisar sobre os pedidos de review?",
+     "speak": "code-review:config.reviewChannel",
      "handler": "src/configHandler/channel-handler"
   }
 ]

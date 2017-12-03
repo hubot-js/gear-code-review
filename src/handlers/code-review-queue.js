@@ -22,18 +22,18 @@ function getPendingReviews(message, hubot) {
 }
 
 function getEmptyMessage(hubot, user) {
-  return hubot.speech().hello(user).append('Fique tranquilo: estamos com todos os reviews em dia.').end();
+  return hubot.speech().hello(user).append('code-review:codeReviewQueue.empty').end();
 }
 
 function getQueueMessage(hubot, user, reviews) {
-  return hubot.speech().hello(user).append('Segue a lista de reviews pendentes:')
+  return hubot.speech().hello(user).append('code-review:codeReviewQueue.queue')
     .append(listReviews(hubot, reviews)).end();
 }
 
 function listReviews(hubot, reviews) {
   const speecher = hubot.speech().paragraph();
 
-  reviews.forEach(review => speecher.item().bold(review.user).append(' está esperando por um review').line());
+  reviews.forEach(review => speecher.item().bold(review.user).append('code-review:codeReviewQueue.list').line());
 
   return speecher.end();
 }

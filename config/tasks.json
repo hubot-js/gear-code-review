@@ -1,33 +1,33 @@
 [
    {
       "handler": "code-review",
-      "trigger": "code review",
+      "trigger": "code-review:codeReview.trigger",
       "category": "code-review",
-      "description": "Pedir um code review",
+      "description": "code-review:codeReview.description",
       "options": {
-        "message": "[[auth]] - Alguém disponível para fazer o review de uma alteração desenvolvida por [[author]]? Para isso responda 'eu faço o review'."
+        "message": "code-review:codeReview.options"
       }
    },
 
    {
-      "handler": "code-review-queue",
-      "trigger": "fila review",
+      "handler": "code-review-done",
+      "trigger": "code-review:codeReviewDone.trigger",
       "category": "code-review",
-      "description": "Listar fila de review"
+      "description": "code-review:codeReviewDone.description"
    },
 
    {
-      "handler": "code-review-done",
-      "trigger": "eu faço o review",
+      "handler": "code-review-queue",
+      "trigger": "code-review:codeReviewQueue.trigger",
       "category": "code-review",
-      "description": "Pegar o próximo review da fila"
+      "description": "code-review:codeReviewQueue.description"
    },
 
    {
       "handler": "code-review-ranking",
-      "trigger": "ranking review",
+      "trigger": "code-review:codeReviewRanking.trigger",
       "category": "code-review",
-      "description": "Listar os maiores revisores de código da história"
+      "description": "code-review:codeReviewRanking.description"
    }
 ]
 

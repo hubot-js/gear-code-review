@@ -18,7 +18,7 @@ function handle(hubot, message, task) {
 }
 
 function getMessageForChannel(hubot) {
-  return hubot.speech('Opa! Pode me pedir o review no privado.').end();
+  return hubot.speech('code-review:codeReview.private').end();
 }
 
 function reviewFor(hubot, message, review) {

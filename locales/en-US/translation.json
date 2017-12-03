@@ -1,0 +1,55 @@
+{
+  "categories": {
+    "name": "Code Review",
+    "description": "To use the code review features, use the commands below: "
+  },
+
+  "config": {
+    "reviewChannel": "Which channel should I ask to advise on the review requests?",
+    "channel": {
+      "notFound": "Channel not found.",
+      "ok": "Ok. Configured channel." 
+    }
+  },
+
+  "codeReview": {
+    "description": "Request a code review",
+    "options": "[[auth]] - Someone available to review a change developed by [[author]]? To do so, answer 'I do the review'.",
+    "trigger": "code review",
+    "private": "Opa! Pode me pedir o review no privado."
+  },
+  
+  "codeReviewDone": {
+    "description": "Pick up the next review from the queue",
+    "trigger": "I do the review",
+    "noReviews": "Be cool: we have all the reviews up to date.",
+    "notify": {
+      "partOne": "It's time",
+      "partTwo": "is coming to do your review."
+    },
+    "thanks": {
+      "partOne": "You can pick up the chair because the",
+      "partTwo": "Is waiting."
+    },
+    "nothingToReview": "Pending reviews have settings that prevent you from reviewing."
+  },
+
+  "codeReviewQueue": {
+    "description": "View review queue",
+    "trigger": "review queue",
+    "empty": "Be cool: we have all the reviews up to date.",
+    "queue": "Here is the list of pending reviews:",
+    "list": " is waiting for a review"
+  },
+
+  "codeReviewRanking": {
+    "description": "List the greatest code reviewers in history",
+    "trigger": "review ranking",
+    "title": "The biggest reviewers in the story are:",
+    "list": {
+      "partOne": "Revised ",
+      "partTwo": " requests for review!"
+    }
+  }
+  
+}

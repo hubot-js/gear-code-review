@@ -12,9 +12,9 @@ function handle(hubot, awnser) {
   const deferred = Q.defer();
 
   if (!channel) {
-    deferred.reject('Canal não encontrado.');
+    deferred.reject('code-review:config.channel.notFound');
   } else {
-    deferred.resolve('Ok. Canal configurado.');
+    deferred.resolve('code-review:config.channel.ok');
     db.getDb().then(database => database.run('UPDATE channel SET channel_name = ?', channel.id));
   }
 

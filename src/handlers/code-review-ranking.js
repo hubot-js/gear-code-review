@@ -14,7 +14,7 @@ function handle(hubot, message) {
 }
 
 function getMessage(hubot, reviewers) {
-  return hubot.speech().append('Os maiores revisores de código da história são:')
+  return hubot.speech().append('code-review:codeReviewRanking.title')
     .append(getReviewers(hubot, reviewers)).end();
 }
 
@@ -22,8 +22,8 @@ function getReviewers(hubot, reviewers) {
   const speecher = hubot.speech().paragraph();
   const group = map(reviewers).sort((a, b) => b.count - a.count);
 
-  group.forEach(reviewer => speecher.item().bold(reviewer.name).separator('Revisou ')
-    .append(reviewer.count).append(' pedidos de review!').line());
+  group.forEach(reviewer => speecher.item().bold(reviewer.name).separator('code-review:codeReviewRanking.list.partOne')
+    .append(reviewer.count).append('code-review:codeReviewRanking.list.partTwo').line());
 
   speecher.line().append(thanks(hubot, group));
 

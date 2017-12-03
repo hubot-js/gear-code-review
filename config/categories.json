@@ -1,8 +1,8 @@
 [
    {
       "key": "code-review",
-      "name": "Code Review",
-      "description": "Para solicitar um code review, utilize os comandos abaixo: ",
+      "name": "code-review:categories.name",
+      "description": "code-review:categories.description",
       "visible": true
    }
 ]
