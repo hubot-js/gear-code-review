@@ -35,13 +35,13 @@ function ranking () {
 
 function register (hubot, review, reviewer) {
   return db.getDb().then(dataBase => dataBase.run('INSERT INTO reviewer_ranking(user, type, date) VALUES(?, ?, ?)',
-   [reviewer.name, review.type, currentTime()]));
+    [reviewer.name, review.type, currentTime()]));
 }
 
 function count(hubot, author) {
   return db.getDb().then(dataBase =>
     dataBase.get('SELECT COUNT(1) as count FROM review_queue WHERE user = ?', author.name)
-    .then(result => result.count));
+      .then(result => result.count));
 }
 
 function reviewChannel () {

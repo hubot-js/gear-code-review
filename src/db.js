@@ -17,8 +17,8 @@ function getDb() {
 
 function startDb() {
   return open()
-        .then(migrate)
-        .catch(() => { }); // do nothing
+    .then(migrate)
+    .catch(() => { }); // do nothing
 }
 
 function open() {
@@ -31,10 +31,10 @@ function migrate(sqliteDb) {
   const migrations = `${gearPath()}/migrations`;
 
   return sqliteDb.migrate({ migrationsPath: migrations })
-           .then((result) => {
-             database = result;
-             return database;
-           });
+    .then((result) => {
+      database = result;
+      return database;
+    });
 }
 
 function gearPath() {
