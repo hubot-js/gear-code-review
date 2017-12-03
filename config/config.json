@@ -1,0 +1,6 @@
+[
+  {
+     "speak": "code-review:config.reviewChannel",
+     "handler": "src/configHandler/channel-handler"
+  }
+]

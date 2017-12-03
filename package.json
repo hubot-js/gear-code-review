@@ -1,0 +1,34 @@
+{
+  "name": "gear-code-review",
+  "version": "1.0.0",
+  "description": "A Hubot Gear for request code review",
+  "scripts": {
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hubot-js/gear-code-review.git"
+  },
+  "keywords": [
+    "hubot-gear",
+    "hubot",
+    "slack",
+    "code-review",
+    "chatbot"
+  ],
+  "author": "robsonbittencourt",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hubot-js/gear-code-review/issues"
+  },
+  "homepage": "https://github.com/hubot-js/gear-code-review#readme",
+  "dependencies": {
+    "sqlite": "^2.9.0",
+    "q": "^2.0.3",
+    "group-by": "0.0.1"
+  },
+  "devDependencies": {
+    "eslint": "^4.12.1",
+    "eslint-config-hubot-js": "^1.0.4"
+  }
+}

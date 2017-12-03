@@ -1,0 +1,12 @@
+language: node_js
+node_js:
+- 7.7.2
+script:
+- npm run lint
+deploy:
+  provider: npm
+  email: robson.luizv@gmail.com
+  api_key:
+    secure: d+P1IBeUK/t3Ufv6A8NyTFWEf7LFK8vN+bYKIC39H2ztvbOAU805zV/so5/VvTjg20gPdtRF9V8E8tzC4Pvp2y44OES3k8k8arswyjj5Jx+qUjo+Wr44yjMhyBj0ivome1KJBw0DayzgPUWDULLu1OxbZZpX7yIIcNGE0o3DUy4WCdgr7PMeDXs9XeyesWIB7MW/voxFRTSibwHZ2m7PkGtB2ORjzZe5sR6nZvDIxO5BF7y+mFnAWliZljvFIQp2FOAYOl/nEEPea4YXazQEA2EBDLmh3LG2gGZLGWYg00OasR0bY5RKrmwL8iMtbUyOUPF0feMhQ2iFq/wOX/+z3Jza6HqkbtX83ZsMVYwSfH6DMxACRjvg8EMedEQFD6PFfvUVKOalaKmgya/FLCnnMQa32rxgYbCuoeuQB9xD5wOM/1Ss/Tt2UjggPp8UBBlMwupNMB3yGVo0pPsabNz2MhUJXMobG20YRYZriI2h0DK0XJD8h+MMxs/7d82DTQXLAvHTgxugpxJGtuyMC6ml6xbTY1kWmJmfNInW1VRwZ9UpiA6z9B9Kn/mFPf8k+iIEwpu8yyeCJPCwD7QcV+kWBUQaTM5snXh6lOIxLS+u/KGkAJaGJc8zCgRvJe/Fu8iKBE/0Ks88hD5YVGJy8MLjLsFrSP+xAS0B4cBXCc3BnnI=
+  on:
+    branch: master

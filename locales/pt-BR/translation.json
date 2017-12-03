@@ -1,0 +1,55 @@
+{
+  "categories": {
+    "name": "Code Review",
+    "description": "Para utilizar as funcionalidades de code review, utilize os comandos abaixo: "
+  },
+
+  "config": {
+    "reviewChannel": "Em qual canal devo pedir avisar sobre os pedidos de review?",
+    "channel": {
+      "notFound": "Canal não encontrado.",
+      "ok": "Ok. Canal configurado." 
+    }
+  },
+
+  "codeReview": {
+    "description": "Pedir um code review",
+    "options": "[[auth]] - Alguém disponível para fazer o review de uma alteração desenvolvida por [[author]]? Para isso responda 'eu faço o review'.",
+    "trigger": "code review",
+    "private": "Opa! Pode me pedir o review no privado."
+  },
+
+  "codeReviewDone": {
+    "description": "Pegar o próximo review da fila",
+    "trigger": "eu faço o review",
+    "noReviews": "Fique tranquilo: estamos com todos os reviews em dia.",
+    "notify": {
+      "partOne": "Chegou a hora.",
+      "partTwo": "está vindo fazer o seu review."
+    },
+    "thanks": {
+      "partOne": "Pode pegar o banquinho porque o",
+      "partTwo": "está esperando."
+    },
+    "nothingToReview": "Os reviews pendentes têm configurações que impedem que você faça o review."
+  },
+
+  "codeReviewQueue": {
+    "description": "Exibir fila de review",
+    "trigger": "fila review",
+    "empty": "Fique tranquilo: estamos com todos os reviews em dia.",
+    "queue": "Segue a lista de reviews pendentes:",
+    "list": " está esperando por um review"
+  },
+
+  "codeReviewRanking": {
+    "description": "Listar os maiores revisores de código da história",
+    "trigger": "ranking review",
+    "title": "Os maiores revisores de código da história são:",
+    "list": {
+      "partOne": "Revisou ",
+      "partTwo": " pedidos de review!"
+    }
+  }
+
+}

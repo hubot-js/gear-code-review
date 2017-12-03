@@ -1,0 +1,33 @@
+[
+   {
+      "handler": "code-review",
+      "trigger": "code-review:codeReview.trigger",
+      "category": "code-review",
+      "description": "code-review:codeReview.description",
+      "options": {
+        "message": "code-review:codeReview.options"
+      }
+   },
+
+   {
+      "handler": "code-review-done",
+      "trigger": "code-review:codeReviewDone.trigger",
+      "category": "code-review",
+      "description": "code-review:codeReviewDone.description"
+   },
+
+   {
+      "handler": "code-review-queue",
+      "trigger": "code-review:codeReviewQueue.trigger",
+      "category": "code-review",
+      "description": "code-review:codeReviewQueue.description"
+   },
+
+   {
+      "handler": "code-review-ranking",
+      "trigger": "code-review:codeReviewRanking.trigger",
+      "category": "code-review",
+      "description": "code-review:codeReviewRanking.description"
+   }
+]
+
