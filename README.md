@@ -8,14 +8,16 @@ A Hubot gear for handle with over the shoulder code reviews
 
 This is a gear to add to hubot.js the ability to ask for reviews. If you do not know the hubot.js or do not know what they are gears like this [click here](https://github.com/hubot-js/hubot.js/blob/master/README.md) for more details.
 
-## Configurations
+![ask-for-review](media/ask-for-review.gif)
+
+## Configuration
 
 Some settings are required. They can be made by Slack using the following command:
 
 ```
 configure code-review
 ```
-![configure](media/configure.gif)
+![configure](media/configure.png)
 
 These settings are stored, so you just need to do them once. But if necessary can make them again.
 
@@ -27,7 +29,7 @@ These settings are stored, so you just need to do them once. But if necessary ca
 code review
 ```
 
-![ask-for-review](media/ask-for-review.gif)
+![ask-for-review](media/ask-for-review.png)
 
 ### Do a review
 
@@ -35,14 +37,14 @@ code review
 I do the review
 ```
 
-![do-review](media/do-review.gif)
+![do-review](media/do-review.png)
 ### Review queue
 
 ```
 review queue
 ```
 
-![review-queue](media/review-queue.gif)
+![review-queue](media/review-queue.png)
 
 ### Review ranking
 
@@ -50,7 +52,7 @@ review queue
 review ranking
 ```
 
-![review](media/review-ranking.gif)
+![review](media/review-ranking.png)
 
 ## Meta
 Robson Bittencourt - @rluizv - robson.luizv@gmail.com
