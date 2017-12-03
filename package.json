@@ -3,8 +3,6 @@
   "version": "1.0.0",
   "description": "A Hubot Gear for request code review",
   "scripts": {
-    "test": "istanbul cover --include-all-sources _mocha -- --recursive --reporter spec",
-    "coveralls": "cat ./coverage/lcov.info | coveralls",
     "lint": "eslint ."
   },
   "repository": {
@@ -15,7 +13,8 @@
     "hubot-gear",
     "hubot",
     "slack",
-    "code-review"
+    "code-review",
+    "chatbot"
   ],
   "author": "robsonbittencourt",
   "license": "MIT",
@@ -24,12 +23,12 @@
   },
   "homepage": "https://github.com/hubot-js/gear-code-review#readme",
   "dependencies": {
-    "sqlite": "^2.8.0",
+    "sqlite": "^2.9.0",
     "q": "^2.0.3",
     "group-by": "0.0.1"
   },
   "devDependencies": {
-    "eslint": "^3.19.0",
+    "eslint": "^4.12.1",
     "eslint-config-hubot-js": "^1.0.4"
   }
 }
