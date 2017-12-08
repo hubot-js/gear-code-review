@@ -16,7 +16,7 @@
     "description": "Request a code review",
     "options": "[[auth]] - Someone available to review a change developed by [[author]]? To do so, answer 'I do the review'.",
     "trigger": "code review",
-    "private": "Opa! Pode me pedir o review no privado."
+    "private": "Oops! You can ask for the review in private."
   },
   
   "codeReviewDone": {
@@ -28,7 +28,7 @@
       "partTwo": "is coming to do your review."
     },
     "thanks": {
-      "partOne": "You can pick up the chair because the",
+      "partOne": "You can get up chair because the",
       "partTwo": "Is waiting."
     },
     "nothingToReview": "Pending reviews have settings that prevent you from reviewing."
