@@ -14,7 +14,8 @@
 
   "codeReview": {
     "description": "Pedir um code review",
-    "options": "[[auth]] - Alguém disponível para fazer o review de uma alteração desenvolvida por [[author]]? Para isso responda 'eu faço o review'.",
+    "options": "[[auth]] - Alguém disponível para fazer o review de uma alteração desenvolvida por [[author]]? Para isso responda 'eu faço o review'.\n [[reviewUrl]]",
+    "triggerText": "code review $",
     "trigger": "code review",
     "private": "Opa! Pode me pedir o review no privado."
   },

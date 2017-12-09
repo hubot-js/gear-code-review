@@ -10,6 +10,16 @@
    },
 
    {
+      "handler": "code-review",
+      "trigger": "code-review:codeReview.triggerText",
+      "category": "code-review",
+      "description": "code-review:codeReview.description",
+      "options": {
+        "message": "code-review:codeReview.options"
+      }
+   },
+
+   {
       "handler": "code-review-done",
       "trigger": "code-review:codeReviewDone.trigger",
       "category": "code-review",
