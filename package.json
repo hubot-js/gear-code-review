@@ -23,12 +23,12 @@
   },
   "homepage": "https://github.com/hubot-js/gear-code-review#readme",
   "dependencies": {
-    "sqlite": "^2.9.0",
+    "sqlite": "^2.9.1",
     "q": "^2.0.3",
     "group-by": "0.0.1"
   },
   "devDependencies": {
-    "eslint": "^4.12.1",
+    "eslint": "^4.16.0",
     "eslint-config-hubot-js": "^1.0.4"
   }
 }
