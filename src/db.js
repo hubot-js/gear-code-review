@@ -22,7 +22,8 @@ function startDb() {
 }
 
 function open() {
-  const dbFile = `${gearPath()}/gear-code-review.sqlite`;
+  const dbPath = path.join(process.env.HOME, 'hubot.js', 'data');
+  const dbFile = `${dbPath}/gear-code-review.db`;
 
   return sqlite.open(dbFile);
 }
