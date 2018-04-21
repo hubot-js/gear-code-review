@@ -33,7 +33,10 @@ function getQueueMessage(hubot, user, reviews) {
 function listReviews(hubot, reviews) {
   const speecher = hubot.speech().paragraph();
 
-  reviews.forEach(review => speecher.item().bold(review.user).append('code-review:codeReviewQueue.list').line());
+  reviews.forEach(review => speecher.item()
+    .bold(review.user)
+    .append('code-review:codeReviewQueue.list')
+    .append(review.param ? review.param : '').line());
 
   return speecher.end();
 }
