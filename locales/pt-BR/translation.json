@@ -40,7 +40,7 @@
     "trigger": "fila review",
     "empty": "Fique tranquilo: estamos com todos os reviews em dia.",
     "queue": "Segue a lista de reviews pendentes:",
-    "list": " está esperando por um review"
+    "list": " está esperando por um review "
   },
 
   "codeReviewRanking": {

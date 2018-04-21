@@ -23,7 +23,7 @@ function getMessageForChannel(hubot) {
 
 function reviewFor(hubot, message, review, params) {
   postMessage(hubot, message, review, params);
-  enqueue(hubot, message, review);
+  enqueue(hubot, message, review, params[0]);
 }
 
 function postMessage(hubot, message, review, params) {
@@ -40,7 +40,7 @@ function getChannelMessage(hubot, review, author, params) {
     .replace('auth').replace('author', author).line().replace('reviewUrl', params[0]).end();
 }
 
-function enqueue(hubot, message, review) {
+function enqueue(hubot, message, review, param) {
   const username = hubot.getUser(message).name;
-  db.enqueue(hubot, username, review.key);
+  db.enqueue(hubot, username, review.key, param);
 }

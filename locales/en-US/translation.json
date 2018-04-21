@@ -40,7 +40,7 @@
     "trigger": "review queue",
     "empty": "Be cool: we have all the reviews up to date.",
     "queue": "Here is the list of pending reviews:",
-    "list": " is waiting for a review"
+    "list": " is waiting for a review "
   },
 
   "codeReviewRanking": {
