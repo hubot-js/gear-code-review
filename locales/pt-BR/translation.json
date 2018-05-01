@@ -26,11 +26,11 @@
     "noReviews": "Fique tranquilo: estamos com todos os reviews em dia.",
     "notify": {
       "partOne": "Chegou a hora.",
-      "partTwo": "está vindo fazer o seu review."
+      "partTwo": " está vindo fazer o seu review."
     },
     "thanks": {
       "partOne": "Pode pegar o banquinho porque o",
-      "partTwo": "está esperando."
+      "partTwo": " está esperando."
     },
     "nothingToReview": "Os reviews pendentes têm configurações que impedem que você faça o review."
   },

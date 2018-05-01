@@ -1,6 +1,6 @@
 {
   "name": "gear-code-review",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "A Hubot Gear for request code review",
   "scripts": {
     "lint": "eslint ."
